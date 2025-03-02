@@ -9,7 +9,7 @@ const Nav = () => {
 
   return (
     <div className='bg-[#000111]'>
-      <nav className=" w-[88%] m-auto h-[100px] flex items-center justify-between">
+      <nav className=" w-[90%] m-auto h-[100px] flex items-center justify-between">
         {/* Logo */}
         <h1 className="text-white text-3xl">AyushSen<span className="text-[#84AB91]">.dev</span></h1>
 
