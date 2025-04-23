@@ -1,13 +1,23 @@
-import Main from "./components/Main"
-import Nav from "./components/Nav"
 
+import Nav from "./components/Nav"
+import MySkills from "./components/MySkills"
+import Home from './components/Home'
+import Education from "./components/Education"
+import MyProjects from "./components/MyProjects"
+import MyInvolvement from "./components/MyInvolvement"
+import Contact from "./components/Contact"
+// import VeiwAnimation from "./animations/veiwAnimation"
 function App() {
   
 
   return (
     <>
-    <Nav/>
-    <Main/>
+    <Home/>
+    <MySkills/>
+    <Education/>
+    <MyProjects/>
+    <MyInvolvement/>
+    <Contact/>
     </>
   )
 }
