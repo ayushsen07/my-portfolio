@@ -17,21 +17,21 @@ function MyProjects() {
                 "JWT based diffrent  authentication/authorization for mentor and mentee, allows mentees to find top mentor among mentors, Mentor can add a service, mentees can book a session with their fav. mentor, Handle zoom service for efficient handling of sessions.",
             tech_stack: ["React JS", "Node.js", "Express.js", "MongoDB", "Mongoose", "zustand"],
             //   project_img: Project3,
-            project_url: "https://seh-shiksha.vercel.app",
-            github_link: "https://github.com/mikasa-404/sehShiksha",
+            project_url: "",
+            github_link: "https://github.com/ayushsen07",
             reverse: false,
         },
         {
             id: 1,
             project_name: "VideoVibes: Video Sharing Platform",
             project_desc:
-                "An Backend proficient video sharing platform where user can post, do share, like videos .",
+                "An Backend proficient video sharing platform integrated tweet system.",
             features:
-                "Create and share podcasts by leveraging OpenAI API for on-demand audio generation from text transcripts and custom image generation for podcast thumbnails.Implemented functionalities like search by title or creator, view trending podcasts and a sticky podcast player to play, pause, skip, and mute podcasts.",
-            tech_stack: ["Next.js", "TypeScript", "Convex", "OpenAI API", "Clerk", "Tailwind CSS", "Next.js", "TypeScript"],
+                "Built a scalable video-sharing platform with tweet-like features, enabling channel creation, video uploads, and user engagement. Optimized RESTful APIs improved response time by 40%, while JWT-based authentication enhanced security by 50%. Refactored modules reduced codebase size by 20%, boosting maintainability and performance..",
+            tech_stack: ["Node.js", "JavaScript", "Express.js", "MongoDB", "Cloudinary", "Postman",],
             //   project_img: Project4,
-            project_url: "https://ai-podcast-platform.vercel.app",
-            github_link: "https://github.com/mikasa-404/ai-podcast-platform",
+            project_url: "",
+            github_link: "https://github.com/ayushsen07/VideoVibes",
             reverse: true,
         },
 
@@ -43,8 +43,8 @@ function MyProjects() {
                 "A personal portfolio showcasing modern web design and user experience with sleek layouts, smooth animations, and highlights of my skills and projects.",
             tech_stack: ["React JS", "framer-motion", "Tailwind", "Express.js"],
             //   project_img: Project2,
-            project_url: "https://priya-youtube.netlify.app/",
-            github_link: "https://github.com/mikasa-404/yt-clone",
+            project_url: "",
+            github_link: "https://github.com/ayushsen07/my-portfolio",
             reverse: false,
         },
     ]
@@ -80,7 +80,7 @@ function MyProjects() {
                                 <button className='rounded text-white border border-[#84AB91] px-4 py-3 font-semibold hover:bg-[#84AB91]'>
                                     Visit Website
                                 </button>
-                                <a className='text-white text-[45px] hover:text-[#84AB91]' href="/"><FaGithub /></a>
+                                <a className='text-white text-[45px] hover:text-[#84AB91]' href={project.github_link} target='blank'><FaGithub /></a>
                             </div>
 
                         </div>
