@@ -15,8 +15,8 @@ function App() {
     <Nav/>
     <Home/>
     <MySkills/>
-    {/* <Education/>
-    <MyProjects/>
+     <Education/>
+     {/* <MyProjects/>
     <MyInvolvement/>
     <Contact/> */}
     </>

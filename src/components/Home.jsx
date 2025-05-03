@@ -13,7 +13,7 @@ function Home() {
     return (
         <>
             {/* Home Page */}
-            <div id='home' className='relative min-h-screen w-full lg:w-[100vw] bg-[#000213] flex flex-col justify-between pt-[100px] px-4 overflow-x-hidden'>
+            <div id='home' className='relative min-h-screen w-full bg-[#000213] flex flex-col justify-between pt-[100px] px-4 overflow-hidden'>
                 {/* Main Content Section */}
                 <div className='w-full max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center'>
                     {/* Left Section */}
@@ -42,7 +42,7 @@ function Home() {
                         </h2>
 
                         {/* Paragraph - Adjusted Width */}
-                        <p className='text-base sm:text-lg text-white leading-relaxed'>
+                        <p className='text-base text-[17.5px] sm:text-lg text-white leading-relaxed'>
                             I'm a passionate Software Developer with a strong background in backend development.
                             Pre-final year CSE student at RGPV Bhopal, I have a deep interest in building scalable web applications.
                             Always eager to learn, solve complex problems, and contribute to impactful projects.

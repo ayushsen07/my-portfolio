@@ -23,7 +23,7 @@ const skills = [
       { name: "HTML5", icon: <SiHtml5 /> },
       { name: "CSS3", icon: <SiCss3 /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-      { name: "Chakra UI", icon: <SiChakraui /> },
+      { name: "Framer Motion", icon: <SiFramer /> },
 
     ],
   },
@@ -54,17 +54,17 @@ const skills = [
 
 const MySkills = () => {
   return (
-    <section id="skills" className="bg-[#000213] w-full h-[800px]">
+    <section id="skills" className="bg-[#000213] w-full overflow-hidden pt-40 pb-[40px]">
 
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] m-auto">
         {/* heading of the page */}
-        <div className="pt-40 ">
-          <motion.h3 className="text-2xl font-bold text-white  pb-3"
+        <div className="">
+          <motion.h3 className="sm:text-2xl text-[18px] font-bold text-white  pb-3"
             variants={fadeInTopVariant}
             initial="hidden"
             whileInView="visible"
           >MY SKILLS</motion.h3>
-          <motion.h1 className="text-6xl font-bold text-white pb-14"
+          <motion.h1 className="sm:text-6xl text-4xl font-bold text-white pb-14"
             variants={fadeInTopVariant}
             initial="hidden"
             whileInView="visible"
@@ -74,7 +74,7 @@ const MySkills = () => {
         {/* skills section  */}
         <div>
           {skills.map((skill, index) => (
-            <motion.div key={index} className=" flex mt-8 gap-5 " variants={fadeInLeftVariant}
+            <motion.div key={index} className=" flex flex-wrap mt-8 gap-5 " variants={fadeInLeftVariant}
               initial="hidden"
               whileInView="visible" >
               <div className="" >

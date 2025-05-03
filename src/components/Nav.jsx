@@ -56,12 +56,12 @@ const Nav = () => {
         scrolled ? 'shadow-lg bg-black' : ''
       }`}
     >
-      <div className="max-w-[95%] mx-auto px-4 sm:px-6 w-full">
-        <nav className="flex items-center justify-between h-[100px] w-full">
+      <div className="max-w-[95%] mx-auto px-4 sm:px-6">
+        <nav className="flex items-center justify-between h-[70px] sm:h-[100px] w-ful">
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <a href="#home" className="block">
-              <h1 className="text-white text-2xl sm:text-3xl">
+              <h1 className="text-white text-[27px] sm:text-3xl">
                 AyushSen<span className="text-[#84AB91]">.dev</span>
               </h1>
             </a>
