@@ -27,10 +27,10 @@ function Education() {
                                 initial="hidden"
                                 whileInView="visible">
                         <h1 className='text-white sm:text-4xl text-3xl font-serif font-semibold pb-3'>RGPV University</h1>
-                        <h3 className='text-white font-semibold text-2xl pb-1'>Bachlore's of Technology in Computer Science</h3>
-                        <p className='text-white font-semibold text-2xl pb-1'>August 2022 - May 2026</p>
+                        <h3 className='text-white font-semibold text-xl md:text-2xl pb-1'>Bachlore's of Technology in Computer Science</h3>
+                        <p className='text-white font-semibold text-xl md:text-2xl pb-1'>August 2022 - May 2026</p>
                         <dl className=" space-y-2">
-                            <dt className="text-white text-2xl font-semibold">Active Member of College Organizations and Societies</dt>
+                            <dt className="text-white text-xl md:text-2xl font-semibold">Active Member of College Organizations and Societies</dt>
                             <dd className="text-white ml-8 text-lg text-gray-700">• Head Coordinator, TNP Cell</dd>
                             <dd className="text-white ml-8 text-lg text-gray-700">• Public Representative, ISTE SC MANIT</dd>
                         </dl>

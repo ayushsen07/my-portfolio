@@ -61,8 +61,8 @@ const Contact = () => {
                 <motion.div className="text-center mb-20" variants={fadeInTopVariant}
                     initial="hidden"
                     whileInView="visible">
-                    <h2 className="text-2xl font-bold text-white text-[#a993ff">MY CONTACT</h2>
-                    <h1 className='text-6xl  text-white font-bold '>Contact<span className='text-[#84AB91]'> Me Here</span></h1>
+                    <h2 className="sm:text-2xl text-[18px] font-bold text-white text-[#a993ff">MY CONTACT</h2>
+                    <h1 className='sm:text-6xl text-4xl  text-white font-bold '>Contact<span className='text-[#84AB91]'> Me Here</span></h1>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

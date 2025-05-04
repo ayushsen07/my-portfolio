@@ -45,13 +45,13 @@ function MyInvolvement() {
   return (
 
     <>
-      <section className="bg-[#000111] py-16">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="bg-[#000111] py-16 w-full">
+        <div className="max-w-[90%] mx-auto px-4">
           <motion.div className="mb-20" variants={fadeInTopVariant}
             initial="hidden"
             whileInView="visible">
-            <h2 className="text-2xl font-bold text-white uppercase tracking-wide">COMMUNITY INVOLVEMENTS</h2>
-            <h3 className="text-6xl font-bold mt-2 text-white">
+            <h2 className="sm:text-2xl text-[18px] font-bold text-white uppercase tracking-wide">COMMUNITY INVOLVEMENTS</h2>
+            <h3 className="sm:text-6xl text-4xl font-bold mt-2 text-white">
               Building <span className="text-[#84AB91]">beyond code</span>
             </h3>
           </motion.div>
