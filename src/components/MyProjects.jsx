@@ -3,6 +3,8 @@ import { FaGithub } from 'react-icons/fa'
 import { NavLink } from 'react'
 import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
+import Project1 from "../assets/Project_1.png"
+import { div } from 'framer-motion/client';
 
 function MyProjects() {
 
@@ -16,7 +18,7 @@ function MyProjects() {
             features:
                 "JWT based diffrent  authentication/authorization for mentor and mentee, allows mentees to find top mentor among mentors, Mentor can add a service, mentees can book a session with their fav. mentor, Handle zoom service for efficient handling of sessions.",
             tech_stack: ["React JS", "Node.js", "Express.js", "MongoDB", "Mongoose", "zustand"],
-            //   project_img: Project3,
+            project_img: Project1,
             project_url: "",
             github_link: "https://github.com/ayushsen07",
             reverse: false,
@@ -29,7 +31,7 @@ function MyProjects() {
             features:
                 "Built a scalable video-sharing platform with tweet-like features, enabling channel creation, video uploads, and user engagement. Optimized RESTful APIs improved response time by 40%, while JWT-based authentication enhanced security by 50%. Refactored modules reduced codebase size by 20%, boosting maintainability and performance..",
             tech_stack: ["Node.js", "JavaScript", "Express.js", "MongoDB", "Cloudinary", "Postman",],
-            //   project_img: Project4,
+              project_img: Project1,
             project_url: "",
             github_link: "https://github.com/ayushsen07/VideoVibes",
             reverse: true,
@@ -42,7 +44,7 @@ function MyProjects() {
             features:
                 "A personal portfolio showcasing modern web design and user experience with sleek layouts, smooth animations, and highlights of my skills and projects.",
             tech_stack: ["React JS", "framer-motion", "Tailwind", "Express.js"],
-            //   project_img: Project2,
+              project_img: Project1,
             project_url: "",
             github_link: "https://github.com/ayushsen07/my-portfolio",
             reverse: false,
@@ -50,48 +52,85 @@ function MyProjects() {
     ]
 
     return (
-        <div id='projects' className='bg-[#000213] w-full pb-10'>
+        <div id='projects' className='bg-[#000213] w-full pt-[150px] pb-10 overflow-hidden'>
             <div className='w-[90%] m-auto space-y-20'>
-                <motion.div variants={fadeInTopVariant}
+                <motion.div
+                    variants={fadeInTopVariant}
                     initial="hidden"
-                    whileInView="visible" >
-                    <h3 className="text-2xl font-bold text-white  ">MY PROJECTS</h3>
-                    <h1 className="text-[64px] font-bold text-white">What <span className="text-[#84AB91]">I have built</span></h1>
+                    whileInView="visible"
+                >
+                    <h3 className="sm:text-2xl text-[18px] font-bold text-white">MY PROJECTS</h3>
+                    <h1 className="sm:text-6xl text-4xl font-bold text-white">What <span className="text-[#84AB91]">I have built</span></h1>
                 </motion.div>
-                <div className='space-y-40 w-[95%] m-auto'>
 
-                    {/* left side of the card */}
+                <div className='space-y-40 '>
                     {projects.map((project, index) => (
-                        <div key={index} className='w-[50%]'>
-                            <h1 className='flex text-white font-bold text-4xl pb-8 leading-15'>{project.project_name}</h1>
+                        <motion.div
+                            key={index}
+                            className={`flex flex-col wra ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 items-center`}
+                            variants={fadeInTopVariant}
+                            initial="hidden"
+                            whileInView="visible"
+                        >
+                            {/* Content Section */}
+                            <motion.div className='w-full md:w-[50%] space-y-4' 
+                            variants={fadeInLeftVariant}
+                            initial="hidden"
+                            whileInView="visible">
+                                <h1 className='text-white font-bold md:text-4xl text-[24px] pb-4 leading-tight'>{project.project_name}</h1>
 
-                            <div className='flex flex-wrap space-x-6'>
-                                {project.tech_stack.map((tech, i) => (
-                                    <div key={i} className='mb-6'>
-                                        <span className='bg-[#84AB91] text-white text-[16px] px-3 py-1 rounded'>{tech}</span>
-                                    </div>
-                                ))}
-                            </div>
+                                <div className='flex flex-wrap gap-2 mb-4'>
+                                    {project.tech_stack.map((tech, i) => (
+                                        <span
+                                            key={i}
+                                            className='bg-[#84AB91] text-white text-[14px] px-3 py-1 rounded inline-block mb-2'
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
 
-                            <p className=' text-white text-[20px] mb-2 font-semibold'>{project.project_desc}</p>
-                            <p className='text-white text-[17px]'> <span className='text-[#84AB91] font-semibold'>Features:{" "}</span>{project.features}</p>
+                                <p className='text-white text-[20px] mb-2 font-semibold'>{project.project_desc}</p>
+                                <p className='text-white text-[17px]'>
+                                    <span className='text-[#84AB91] font-semibold'>Features:{" "}</span>
+                                    {project.features}
+                                </p>
 
-                            <div className='flex items-center mt-10 gap-8'>
-                                <button className='rounded text-white border border-[#84AB91] px-4 py-3 font-semibold hover:bg-[#84AB91]'>
-                                    Visit Website
-                                </button>
-                                <a className='text-white text-[45px] hover:text-[#84AB91]' href={project.github_link} target='blank'><FaGithub /></a>
-                            </div>
+                                <div className='flex items-center mt-6 gap-6'>
+                                    <button className='rounded text-white border border-[#84AB91] px-4 py-2 font-semibold hover:bg-[#84AB91] transition duration-300'>
+                                        Visit Website
+                                    </button>
+                                    <a
+                                        className='text-white text-[32px] hover:text-[#84AB91] transition duration-300'
+                                        href={project.github_link}
+                                        target='_blank'
+                                        rel="noreferrer"
+                                    >
+                                        <FaGithub />
+                                    </a>
+                                </div>
+                            </motion.div>
 
-                        </div>
+                            {/* Image Section */}
+                            <motion.div className='w-full md:w-[50%] flex justify-center' 
+                            variants={fadeInRightVariant}
+                            initial="hidden"
+                            whileInView="visible">
+                                <div className='relative w-[90%] aspect-video rounded-lg overflow-hidden border- border-[#84AB91] shadow-xl'>
+                                    {typeof project.project_img === 'string' ? (
+                                        <img
+                                            src={project.project_img}
+                                            alt={project.project_name}
+                                            className='w-full h-full object-cover'
+                                        />
+                                    ) : (
+                                        // If project_img is a React component
+                                        project.project_img
+                                    )}
+                                </div>
+                            </motion.div>
+                        </motion.div>
                     ))}
-
-
-                    {/* right side */}
-                    <div>
-                        {/* project image */}
-                        sdafkjh
-                    </div>
                 </div>
             </div>
         </div>

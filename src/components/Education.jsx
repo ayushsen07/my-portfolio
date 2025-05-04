@@ -6,7 +6,7 @@ import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVa
 
 function Education() {
     return (
-        <div className='bg-[#000213] w-[100%] pt-[150px] pb-[50px]'>
+        <div className='bg-[#000213] w-full pt-[150px] pb-[50px]'>
             <div className='w-[90%] m-auto h-[80%] flex flex-col justify-around'>
                 <motion.div variants={fadeInTopVariant}
                             initial="hidden"
@@ -15,7 +15,7 @@ function Education() {
                     <h1 className="sm:text-6xl text-4xl font-bold text-white pb-14">Where <span className="text-[#84AB91]">I'm Learning</span></h1>
                 </motion.div>
 
-                <div className='flex gap-10 flex-col md:flex-row  justify-between items-center'>
+                <div className='flex md:flex-row md:gap-15 flex-col  '>
                     {/* image section on the right side   */}
                     <motion.div className='' variants={fadeInLeftVariant}
                                 initial="hidden"
