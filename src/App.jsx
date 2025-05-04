@@ -15,10 +15,11 @@ function App() {
     <Nav/>
     <Home/>
     <MySkills/>
-    {/* <Education/>
+
+    {/* <Education/> */}
     <MyProjects/>
-    <MyInvolvement/>
-    <Contact/> */}
+     <MyInvolvement/> 
+    <Contact/>
     </>
   )
 }

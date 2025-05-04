@@ -1,12 +1,13 @@
 import React from 'react'
 import clgLogo from '../assets/clg_logo.png'
 import BulletPoint from "../assets/Point_logo.png"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
 
 function Education() {
     return (
-        <div className='bg-[#000213] w-full pt-[150px] pb-[50px]'>
+        
+        <div className='bg-[#000213] w-full  pb-[50px]'>
             <div className='w-[90%] m-auto h-[80%] flex flex-col justify-around'>
                 <motion.div variants={fadeInTopVariant}
                             initial="hidden"
@@ -40,6 +41,8 @@ function Education() {
                 </div>
             </div>
         </div>
+
+
     )
 }
 

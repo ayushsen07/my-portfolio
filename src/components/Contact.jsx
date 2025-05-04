@@ -56,7 +56,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="bg-[#000111] py-16">
+        <section id="contact" className="bg-[#000111] py-16 w-full overflow-hidden">
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div className="text-center mb-20" variants={fadeInTopVariant}
                     initial="hidden"

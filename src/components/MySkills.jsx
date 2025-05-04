@@ -56,7 +56,7 @@ const MySkills = () => {
   return (
     <section id="skills" className="bg-[#000213] w-full overflow-hidden pt-40 pb-[40px]">
 
-      <div className="w-[90%] m-auto">
+      <div className="w-[90%] mx-auto">
         {/* heading of the page */}
         <div className="">
           <motion.h3 className="sm:text-2xl text-[18px] font-bold text-white  pb-3"
