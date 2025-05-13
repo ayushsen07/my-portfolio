@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
-
+import fadeImage from '../assets/left.png'
 const Contact = () => {
     const form = useRef();
     const [formData, setFormData] = useState({
@@ -56,7 +56,8 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="bg-[#000111] py-16 w-full overflow-hidden">
+        <section id="contact" className="bg-[#000111] py-20 w-full overflow-hidden">
+            
             <div className="max-w-6xl mx-auto px-4">
                 <motion.div className="text-center mb-20" variants={fadeInTopVariant}
                     initial="hidden"

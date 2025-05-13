@@ -8,14 +8,20 @@ import { LuMouse } from 'react-icons/lu';
 import Nav from './Nav';
 import { motion } from 'framer-motion';
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
+import fadeImage from '../assets/top.png';
 
 function Home() {
     return (
         <>
-            {/* Home Page */}
-            <div id='home' className='relative min-h-screen w-full bg-[#000213] flex flex-col justify-between pt-[100px] px-4 overflow-hidden'>
+            {/* Home Page with properly positioned background image */}
+            <div id='home' className='relative min-h-screen w-full bg-[#000111] flex flex-col justify-between pt-[100px] pb-34 px-4 overflow-hidden'>
+                {/* Background Image positioned absolutely */}
+                <div className='absolute top-0 left-0 w-full z-0 pointer-events-none'>
+                    <img src={fadeImage} alt="background image" className='w-full object-cover' />
+                </div>
+                
                 {/* Main Content Section */}
-                <div className='w-full max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center'>
+                <div className='w-full max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center relative z-10'>
                     {/* Left Section */}
                     <motion.div 
                         className='w-full md:w-1/2 flex flex-col mb-10 md:mb-0 space-y-6 md:space-y-0' 
@@ -24,10 +30,10 @@ function Home() {
                         whileInView="visible"
                     >
                         <h1 className='md:text-3xl text-[32px] sm:text-3xl font-bold text-white mb-4 sm:mb-6 md:mb-[40px] mt-6'>
-                            Hello, I'm <span className="text-[#84AB91] text-[32px] sm:text-5xl md:text-6xl font-bold sm:inline">Ayush Sen!</span>
+                            Hello, I'm <span className="text-[#84AB91] text-[32px] sm:text-5xl md:text-[64px] font-bold sm:inline">Ayush Sen!</span>
                         </h1>
 
-                        <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6'>
+                        <h2 className='text-2xl sm:text-3xl md:text-[40px] font-bold text-white mb-4 sm:mb-6'>
                             A {' '}
                             <TypeAnimation
                                 className='text-[#84AB91]'
@@ -52,29 +58,29 @@ function Home() {
                         <div className="flex gap-2 sm:gap-3 mt-6 sm:mt-8">
                             <a href="https://www.linkedin.com/in/ayushsen07" target="_blank" rel="noopener noreferrer"
                                 className="p-1 sm:p-2 rounded-full">
-                                <FaLinkedin className="text-[#ffffff] text-3xl sm:text-4xl" />
+                                <FaLinkedin className="text-[#ffffff] text-4xl sm:text-4xl" />
                             </a>
 
                             <a href="https://github.com/ayushsen07" target="_blank" rel="noopener noreferrer"
                                 className="p-1 sm:p-2 rounded-full">
-                                <FaGithub className="text-white text-3xl sm:text-4xl" />
+                                <FaGithub className="text-white text-4xl sm:text-4xl" />
                             </a>
 
                             <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer"
                                 className="p-1 sm:p-2 rounded-full">
-                                <SiLeetcode className="text-white text-3xl sm:text-4xl" />
+                                <SiLeetcode className="text-white text-4xl sm:text-4xl" />
                             </a>
 
                             {/* Email Icon */}
                             <a href='https://mail.google.com/mail/?view=cm&fs=1&to=senayush920@gmail.com' target='blank' className="p-1 sm:p-2 rounded-full">
-                                <MdEmail className="text-white text-3xl sm:text-4xl" />
+                                <MdEmail className="text-white text-4xl sm:text-4xl" />
                             </a>
                         </div>
                     </motion.div>
 
                     {/* Right Section - Fixed Image Compression */}
                     <motion.div 
-                        className='w-full md:w-1/2 flex justify-center' 
+                        className='w-full  md:w-1/2 flex pt-10 justify-center' 
                         variants={fadeInRightVariant}
                         initial="hidden"
                         whileInView="visible"
@@ -90,7 +96,7 @@ function Home() {
                 </div>
                 
                 {/* Scroll Mouse - Now at the bottom of the content, not fixed */}
-                <div className="mt-16 md:mt-12 mb-8 flex flex-col items-center justify-center w-full">
+                <div className="mt-16 md:mt-12 mb-8 flex flex-col items-center justify-center w-full relative z-10">
                     <LuMouse className="text-white text-xl sm:text-2xl md:text-3xl animate-bounce" />
                     <p className="text-white text-xs sm:text-sm mt-1 text-center">Scroll Down</p>
                 </div>

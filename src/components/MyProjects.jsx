@@ -4,7 +4,10 @@ import { NavLink } from 'react'
 import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
 import Project1 from "../assets/Project_1.png"
+import Project2 from "../assets/project_2.png"
+import Project3 from "../assets/Project_3.png"
 import { div } from 'framer-motion/client';
+import fadeImage  from '../assets/left.png'
 
 function MyProjects() {
 
@@ -31,7 +34,7 @@ function MyProjects() {
             features:
                 "Built a scalable video-sharing platform with tweet-like features, enabling channel creation, video uploads, and user engagement. Optimized RESTful APIs improved response time by 40%, while JWT-based authentication enhanced security by 50%. Refactored modules reduced codebase size by 20%, boosting maintainability and performance..",
             tech_stack: ["Node.js", "JavaScript", "Express.js", "MongoDB", "Cloudinary", "Postman",],
-              project_img: Project1,
+              project_img: Project2,
             project_url: "",
             github_link: "https://github.com/ayushsen07/VideoVibes",
             reverse: true,
@@ -44,7 +47,7 @@ function MyProjects() {
             features:
                 "A personal portfolio showcasing modern web design and user experience with sleek layouts, smooth animations, and highlights of my skills and projects.",
             tech_stack: ["React JS", "framer-motion", "Tailwind", "Express.js"],
-              project_img: Project1,
+              project_img: Project3,
             project_url: "",
             github_link: "https://github.com/ayushsen07/my-portfolio",
             reverse: false,
@@ -52,7 +55,15 @@ function MyProjects() {
     ]
 
     return (
-        <div id='projects' className='bg-[#000213] w-full pt-[150px] pb-10 overflow-hidden'>
+        <div id='projects' className='bg-[#000111] w-full pt-34 pb-34 overflow-hidden'>
+            <div className="absolute  right-  w-1/3 flex items-center pointer-events-none">
+                    <img 
+                      src={fadeImage}
+                      alt="Background fade" 
+                      className="h-full w-full object-cover object-left"
+                    />
+                  </div>
+            
             <div className='w-[90%] m-auto space-y-20'>
                 <motion.div
                     variants={fadeInTopVariant}
@@ -101,7 +112,7 @@ function MyProjects() {
                                         Visit Website
                                     </button>
                                     <a
-                                        className='text-white text-[32px] hover:text-[#84AB91] transition duration-300'
+                                        className='text-white text-[40px] hover:text-[#84AB91] transition duration-300'
                                         href={project.github_link}
                                         target='_blank'
                                         rel="noreferrer"

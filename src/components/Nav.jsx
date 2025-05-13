@@ -53,7 +53,7 @@ const Nav = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full bg-[#000111] z-50 transition-all duration-300 overflow-x-hidden ${
-        scrolled ? 'shadow-lg bg-black' : ''
+        scrolled ? 'shadow-lg bg-[#000111]' : 'bg-transparent'
       }`}
     >
       <div className="max-w-[95%] mx-auto px-4 sm:px-6 w-full">

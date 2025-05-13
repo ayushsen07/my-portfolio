@@ -2,7 +2,7 @@ import React from 'react';
 import { RiGroupLine } from "react-icons/ri";
 import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
-
+import fadeImage from '../assets/right.png'
 
 function MyInvolvement() {
 
@@ -45,7 +45,14 @@ function MyInvolvement() {
   return (
 
     <>
-      <section className="bg-[#000111] py-16 w-full">
+      <section className="bg-[#000111] pb-20 pt-20 w-full">
+       <div className="absolute top- right-0  w-1/3 flex items-center pointer-events-none">
+               <img 
+                 src={fadeImage}
+                 alt="Background fade" 
+                 className="h-full w-full object-cover object-left"
+               />
+             </div>
         <div className="max-w-[90%] mx-auto px-4">
           <motion.div className="mb-20" variants={fadeInTopVariant}
             initial="hidden"
