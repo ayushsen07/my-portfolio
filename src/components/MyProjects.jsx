@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { fadeInBottomVariant, fadeInLeftVariant, fadeInRightVariant, fadeInTopVariant } from "../animations/Variants";
 import Project1 from "../assets/Project_1.png"
 import Project2 from "../assets/project_2.png"
-import Project3 from "../assets/Project_3.png"
+import Project3 from "../assets/project_3.png"
 import { div } from 'framer-motion/client';
 import fadeImage  from '../assets/left.png'
 
