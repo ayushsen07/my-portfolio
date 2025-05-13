@@ -22,7 +22,7 @@ function MyProjects() {
                 "JWT based diffrent  authentication/authorization for mentor and mentee, allows mentees to find top mentor among mentors, Mentor can add a service, mentees can book a session with their fav. mentor, Handle zoom service for efficient handling of sessions.",
             tech_stack: ["React JS", "Node.js", "Express.js", "MongoDB", "Mongoose", "zustand"],
             project_img: Project1,
-            project_url: "",
+            project_url: "https://zingy-bonbon-bd3357.netlify.app/",
             github_link: "https://github.com/ayushsen07",
             reverse: false,
         },
@@ -35,7 +35,7 @@ function MyProjects() {
                 "Built a scalable video-sharing platform with tweet-like features, enabling channel creation, video uploads, and user engagement. Optimized RESTful APIs improved response time by 40%, while JWT-based authentication enhanced security by 50%. Refactored modules reduced codebase size by 20%, boosting maintainability and performance..",
             tech_stack: ["Node.js", "JavaScript", "Express.js", "MongoDB", "Cloudinary", "Postman",],
               project_img: Project2,
-            project_url: "",
+            project_url: "https://github.com/ayushsen07/VideoVibes/blob/main/README.md",
             github_link: "https://github.com/ayushsen07/VideoVibes",
             reverse: true,
         },
@@ -48,7 +48,7 @@ function MyProjects() {
                 "A personal portfolio showcasing modern web design and user experience with sleek layouts, smooth animations, and highlights of my skills and projects.",
             tech_stack: ["React JS", "framer-motion", "Tailwind", "Express.js"],
               project_img: Project3,
-            project_url: "",
+            project_url: "https://devayushsen.vercel.app/",
             github_link: "https://github.com/ayushsen07/my-portfolio",
             reverse: false,
         },
@@ -108,9 +108,7 @@ function MyProjects() {
                                 </p>
 
                                 <div className='flex items-center mt-6 gap-6'>
-                                    <button className='rounded text-white border border-[#84AB91] px-4 py-2 font-semibold hover:bg-[#84AB91] transition duration-300'>
-                                        Visit Website
-                                    </button>
+                                    <a href={project.project_url} className='rounded text-white border border-[#84AB91] px-4 py-2 font-semibold hover:bg-[#84AB91] transition cursor-pointer duration-300'>Visit Website</a>
                                     <a
                                         className='text-white text-[40px] hover:text-[#84AB91] transition duration-300'
                                         href={project.github_link}
