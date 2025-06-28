@@ -16,7 +16,7 @@ This portfolio is designed to showcase my work, highlight the skills I’ve been
 
 ## 🚀 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML, CSS, JavaScript, Framer Motion
 - **Frameworks/Libraries:** React.js, TailwindCSS
 - **Deployment:** Vercel
 - **Tools:** Git, GitHub, VS Code
